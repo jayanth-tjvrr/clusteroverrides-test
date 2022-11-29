@@ -5,18 +5,6 @@ resources:
 - ../../bc1
 patches:
   - target:
-      group: controlplane.cluster.x-k8s.io
-      version: v1beta1
-      kind: AWSManagedControlPlane
-      name: .*
-    path: awscontrolplane-details.yaml
-  - target:
-      group: infrastructure.cluster.x-k8s.io
-      version: v1beta1
-      kind: AWSMachineTemplate
-      name: .*
-    path: awsmachinetemplate-details.yaml
-  - target:
       group: cluster.x-k8s.io
       version: v1beta1
       kind: MachineDeployment
