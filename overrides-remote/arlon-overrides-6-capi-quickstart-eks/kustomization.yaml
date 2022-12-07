@@ -2,11 +2,11 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-- ../../bc1
+- https://github.com/jayanth-tjvrr/ar-test-int/tree/main/cluster-1000
 patches:
   - target:
       group: cluster.x-k8s.io
       version: v1beta1
       kind: MachineDeployment
       name: .*
-    path: machinedeployment-details.yaml
+    path: md-details.yaml
