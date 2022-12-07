@@ -2,7 +2,7 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-- https://github.com/jayanth-tjvrr/ar-test-int/tree/main/cluster-1000
+- https://github.com/jayanth-tjvrr/ar-test-int/cluster-1000
 patches:
   - target:
       group: cluster.x-k8s.io
